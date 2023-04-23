@@ -838,7 +838,7 @@ function createPlayer(x, y, size, color) {
         },
         //プレイヤーの描画
         draw: function () {
-            ctx.drawImage(image, this.x - (this.size), this.y - (this.size), this.size*2, this.size*2,);
+            ctx.drawImage(image, this.x - (this.size), this.y - (this.size), this.size * 2, this.size * 2,);
         },
         //プレイヤーのマウス追従
         followMouse: function () {
@@ -1914,9 +1914,10 @@ function gameEnd() {
     }
 
     if (endF.gameEnd_outTime >= canvas.height) {
+        console.log("nextGame");
         location.reload();
     }
-    else{
+    else {
         // 次のフレームを要求
         requestAnimationFrame(gameEnd);
     }
