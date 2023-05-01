@@ -772,6 +772,10 @@ function createEnemy(x, y, enemyType) {
                     break;
             }
 
+            //speedUp
+            this.y += 1 + (time/100);
+            console.log(1 + (time/100));
+
             this.bulletInterval =
                 fireBullet(this.x, this.y, this.bulletInterval, this.bulletType, this.charaType, this);
 
