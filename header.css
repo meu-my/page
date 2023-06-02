@@ -34,7 +34,7 @@ header .header-button {
     color: var(--maincolor);
     background-color: rgb(255, 255, 255);
     border-radius: 10px; /* 角を丸くする */
-    padding: 4px 15px;
+    padding: 4px 5%;
     border: none;
     font-weight: bold;
     cursor: pointer;
