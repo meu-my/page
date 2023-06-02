@@ -6,7 +6,6 @@
 /*ヘッダー*/
 header {
     position: fixed;
-    padding-right: 30px;
     background-color: #ffffff;
     border-bottom: 2px solid var(--maincolor);
     color: #fff;
@@ -16,30 +15,63 @@ header {
     z-index: 999; /* ヘッダーを他の要素よりも手前に配置 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-header nav {
-    background-color: #ffffff;
-    color: #fff;
-    padding: 10px 90px;
+/* スマートフォン向けのスタイル */
+@media only screen and (max-width: 200px) {
+    header nav {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    /*ヘッダーボタン*/
+    header .header-button {
+        color: var(--maincolor);
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px; /* 角を丸くする */
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    header .header-button:hover {
+        color: white;
+        background-color: var(--maincolor);
+    }
 }
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-/*ヘッダーボタン*/
-header .header-button {
-    color: var(--maincolor);
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px; /* 角を丸くする */
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 14px;
-}
-header .header-button:hover {
-    color: white;
-    background-color: var(--maincolor);
+/* デスクトップ向けのスタイル */
+@media only screen and (min-width: 100px) {
+    header nav {
+        background-color: #ffffff;
+        color: #fff;
+        padding: 10px 90px;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    /*ヘッダーボタン*/
+    header .header-button {
+        color: var(--maincolor);
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px; /* 角を丸くする */
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    header .header-button:hover {
+        color: white;
+        background-color: var(--maincolor);
+    }
 }
