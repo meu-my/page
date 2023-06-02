@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shooting Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../base.css" rel="stylesheet" type="text/css">
+    <link href="game.css" rel="stylesheet" type="text/css">
+    <link href="../header.css" rel="stylesheet" type="text/css">
+    <link href="../footer.css" rel="stylesheet" type="text/css">
+    <script src="../commonFunction.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <button class="header-button" onclick="redirectToPage('../index.html')">Home</button>
+                <button class="header-button" onclick="redirectToPage('../made.html')">Made</button>
+                <button class="header-button" onclick="redirectToPage('../onBrowser.html')">OnBrowser</button>
+                <button class="header-button" onclick="redirectToPage('../other.html')">Other</button>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="canvasContainer">
+        <canvas id="stage" width="200" height="780"></canvas>
+        <canvas id="gameCanvas" width="400" height="780"></canvas>
+        <canvas id="info" width="200" height="780"></canvas>
+        <script id="gameSctipt" src="game.js"></script>
+    </div>
+
+    <footer>
+        <div class="icon-row">
+            <div class="footer_text">
+                <a>Link</a>
+            </div>
+
+
+            <div class="icon" onclick="redirectToPage('https://twitter.com/meu_my_')">
+                <img src="../link_icon/twitter_icon.png" alt="Icon 1">
+            </div>
+
+            <div class="icon" onclick="redirectToPage('https://youtube.com/@meu_my')">
+                <img src="../link_icon/youtube_icon.png" alt="Icon 2">
+            </div>
+            
+            
+            <div class="footer_copylight">
+                <a>© 2023 Meu</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
