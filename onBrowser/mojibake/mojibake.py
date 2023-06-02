@@ -3,7 +3,7 @@
 #それからhttp://localhost:8000/janken2.htmlにアクセス
 #テストを行う場合
 
-import cgi
+import html
 
 def text_garbled():
     now_div = Element("inputText1")
@@ -27,4 +27,4 @@ def text_repair():
 
 
 def escape_html(input):
-    return cgi.escape(input)
+    return html.escape(input)
