@@ -13,6 +13,7 @@ header {
     top: 0%;
     width: 100%;
     height: 55px;
+    padding: 0px 20px;
     z-index: 999; /* ヘッダーを他の要素よりも手前に配置 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
