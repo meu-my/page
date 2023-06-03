@@ -24,7 +24,7 @@ footer .icon-row {
 
 footer .footer_text {
     color: var(--maincolor);
-    margin-left: 50px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 2px;
     font-size: 14px;
@@ -34,7 +34,7 @@ footer .footer_text {
 footer .footer_copylight {
     color: var(--maincolor);
     margin-left: auto; /* 左側の余白を自動調整 */
-    margin-right: 50px;
+    margin-right: 20px;
     margin-top: 2px;
     font-size: 14px;
     text-align: right;

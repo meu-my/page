@@ -53,9 +53,9 @@
         bottom: 5px;
         left: 50%;
         transform: translateX(-50%);
-        width: 100px;
+        width: 80px;
         height: 30px;
-        font-size: 15px;
+        font-size: 13px;
         font-weight: bold;
         color: var(--maincolor);
         background-color: rgb(255, 255, 255);

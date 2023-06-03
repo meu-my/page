@@ -21,9 +21,6 @@
         height: 100%;
         background-color: #ffffff;
         color: #fff;
-        display: flex;
-        align-items: center;
-        text-align: left;
     }
     header nav ul {
         height: 100%;
@@ -32,8 +29,8 @@
         list-style: none;
         display: flex;
         align-items: center;
-        text-align: left;
-        justify-content: left; /* 水平方向に中央揃え */
+        text-align: center;
+        justify-content: center; /* 水平方向に中央揃え */
     }
     /*ヘッダーボタン*/
     header .header-button {
