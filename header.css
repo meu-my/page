@@ -3,51 +3,104 @@
     --maincolor : rgb(0, 0, 0) ; 
 }
 
-/*ヘッダー*/
-header {
-    width: 100%;
-    height: 55px;
-    top: 0%;
-    z-index: 999; /* ヘッダーを他の要素よりも手前に配置 */
-    position: fixed;
-    color: #fff;
-    background-color: #ffffff;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+/* スマホ用のスタイル */
+@media (max-width: 600px) {
+    /*ヘッダー*/
+    header {
+        width: 100%;
+        height: 55px;
+        top: 0%;
+        z-index: 999; /* ヘッダーを他の要素よりも手前に配置 */
+        position: fixed;
+        color: #fff;
+        background-color: #ffffff;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    header nav {
+        height: 100%;
+        background-color: #ffffff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    header nav ul {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: left; /* 水平方向に中央揃え */
+    }
+    /*ヘッダーボタン*/
+    header .header-button {
+        width: 100px;
+        height: 80%;
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--maincolor);
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px; /* 角を丸くする */
+        cursor: pointer;
+        margin: 0px 0px;
+    }
+    header .header-button:hover {
+        color: white;
+        background-color: var(--maincolor);
+    }
 }
-header nav {
-    height: 100%;
-    background-color: #ffffff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-left: 50px;
-}
-header nav ul {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: left; /* 水平方向に中央揃え */
-}
-/*ヘッダーボタン*/
-header .header-button {
-    width: 100px;
-    height: 80%;
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--maincolor);
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 5px; /* 角を丸くする */
-    cursor: pointer;
-    margin: 0px 5px;
-}
-header .header-button:hover {
-    color: white;
-    background-color: var(--maincolor);
+/* PC用のスタイル */
+@media (min-width: 600px) {
+    /*ヘッダー*/
+    header {
+        width: 100%;
+        height: 55px;
+        top: 0%;
+        z-index: 999; /* ヘッダーを他の要素よりも手前に配置 */
+        position: fixed;
+        color: #fff;
+        background-color: #ffffff;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    header nav {
+        height: 100%;
+        background-color: #ffffff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-left: 50px;
+    }
+    header nav ul {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        justify-content: left; /* 水平方向に中央揃え */
+    }
+    /*ヘッダーボタン*/
+    header .header-button {
+        width: 100px;
+        height: 80%;
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--maincolor);
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px; /* 角を丸くする */
+        cursor: pointer;
+        margin: 0px 5px;
+    }
+    header .header-button:hover {
+        color: white;
+        background-color: var(--maincolor);
+    }
 }
