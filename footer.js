@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         //var currentRootPath = "file:///M:/web/";
         var pagePath = "https://"+page
         var imgPath = currentRootPath+"link_icon/"+img+".png"
+        concole.log(imgPath)
 
         var icon = document.createElement('div');
         icon.className = 'icon';
