@@ -1,0 +1,32 @@
+
+:root{
+    --maincolor : rgb(0, 0, 0) ; 
+}
+
+
+body {
+    margin: 0;
+    padding-top: 80px; /* ヘッダーの高さと同じ値に設定 */
+    font-family: "Meiryo", "メイリオ", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+/*メイン*/
+main {
+    padding: 30px;
+    margin: 30px;
+    border: none;
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    color:var(--maincolor);
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+p {
+    color:var(--maincolor);
+    margin: 0;
+}
