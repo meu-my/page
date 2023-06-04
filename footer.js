@@ -33,11 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // アイコンを作成
     function createLinkIcon(img, page) {
-        var currentRootPath = "https://meu-my.github.io/page/"
-        //var currentRootPath = "file:///M:/web/";
+        var currentRootPath = "https://meu-my.github.io/page/link_icon"
+        //var currentRootPath = "file:///M:/web/link_icon";
         var pagePath = "https://"+page
-        var imgPath = currentRootPath+"link_icon/"+img+".png"
-        concole.log(imgPath)
+        var imgPath = currentRootPath+"/"+img+".png"
 
         var icon = document.createElement('div');
         icon.className = 'icon';
