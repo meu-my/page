@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function createHeaderButton(text, page) {
         var currentRootPath = "https://meu-my.github.io/page/"
         //var currentRootPath = "file:///M:/web/";
-        console.log(currentRootPath)
         var path = currentRootPath+page+".html"
         var button = document.createElement('button');
         button.className = 'header-button';
