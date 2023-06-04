@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Shooting Game</title>
-    
+
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     
@@ -22,17 +22,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <button class="header-button" onclick="redirectToPage('../../index.html')">Home</button>
-                <button class="header-button" onclick="redirectToPage('../../made.html')">Made</button>
-                <button class="header-button" onclick="redirectToPage('../../onBrowser.html')">OnBrowser</button>
-                <button class="header-button" onclick="redirectToPage('../../other.html')">Other</button>
-            </ul>
-        </nav>
-    </header>
-
+    <script src="../../header.js"></script>
 
     <main>
         <h1>文字化けメーカー</h1>
@@ -43,30 +33,8 @@
         <button py-click="text_repair()">文字修正</button>
         <textarea type="text" id="outputText" rows="5" placeholder="修正後"></textarea>
     </main>
-    
-    <div id="now"></div>
 
-    <footer>
-        <div class="icon-row">
-            <div class="footer_text">
-                <a>Link</a>
-            </div>
-
-
-            <div class="icon" onclick="redirectToPage('https://twitter.com/meu_my_')">
-                <img src="../../link_icon/twitter_icon.png" alt="Icon 1">
-            </div>
-
-            <div class="icon" onclick="redirectToPage('https://youtube.com/@meu_my')">
-                <img src="../../link_icon/youtube_icon.png" alt="Icon 2">
-            </div>
-            
-            
-            <div class="footer_copylight">
-                <a>© 2023 Meu</a>
-            </div>
-        </div>
-    </footer>
+    <script src="../../footer.js"></script>
 </body>
 
 </html>
