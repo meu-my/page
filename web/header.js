@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ヘッダーボタンを作成
     function createHeaderButton(text, page) {
-        //var currentRootPath = window.location.origin;
-        var currentRootPath = "file:///M:/web/";
+        var currentRootPath = window.location.origin;
+        //var currentRootPath = "file:///M:/web/";
         var path = currentRootPath+page+".html"
         var button = document.createElement('button');
         button.className = 'header-button';
