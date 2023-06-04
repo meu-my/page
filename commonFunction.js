@@ -3,5 +3,5 @@
 //指定ページに移動
 function redirectToPage(url) {
     console.log(url)
-    //window.location.href = url;
+    window.location.href = url;
 }
